@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Адаптивная форма авторизации в модальном окне JS</title>
+</head>
+
+<body>
+    <h2 class="h2">Модальная форма входа</h2>
+    <button id="openModalBtn">Войти</button>
+
+    <div class="modal">
+
+        <form class="modal-content animate" action="">
+            <div class="img-content">
+                <img class="avatar"
+                    src="https://avatars.mds.yandex.net/get-ydo/1540809/2a000001684955d0eef9296e501a07ef10b2/320x320"
+                    alt="">
+                <button class="closeBtn">&times;</button>
+            </div>
+            <div class="container">
+
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Напишите своё имя" name="name" required>
+
+                <label for="password">Пароль</label>
+                <input type="password" placeholder="Напишите свой пароль" name="password" required>
+
+                <button class="loginBtn">Войти</button>
+
+                <label>
+                    <input type="checkbox" checked name="remember"> Запомнить меня
+                </label>
+
+            </div>
+            <div class="container-bottom">
+
+                <button class="cancel">Отмена</button>
+                <div class="forgetPassword">Забыли <a href="#">пароль</a>?</div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
